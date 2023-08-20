@@ -1,26 +1,41 @@
-.form {
-    display: flex;
-    flex-direction: column;
-    max-width: 30em;
-    }
-    .formItem {
-    padding: 1em;
-    margin: 1em 0;
-    flex-grow: 1;
-    }
-    .formTextArea {
-    @extend .formItem;
-    min-height: 8em;
-    }
-    .arrayItem {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: stretch;
-    }
-    .buttonItem {
-    width: 3rem;
-    height: 3rem;
-    flex-grow: 0;
-    font-size: 1.5em;
-    }
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+table {
+  border: none;
+  border-collapse: collapse;
+}
+
+th, td {
+  border: 1px solid;
+  padding: 0.5em;
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+  
+  body {
+    color: white;
+    background: black;
+  }
+}
+
+.container {
+  padding: 1em;
+}
